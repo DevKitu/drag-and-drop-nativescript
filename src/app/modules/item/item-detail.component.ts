@@ -35,6 +35,8 @@ export class ItemDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.getItemData();
+  }
+  ngAfterViewInit() {
     this.setImagePosition();
   }
   setImagePosition() {
